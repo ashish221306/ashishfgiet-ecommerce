@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ashishfgiet ecommerce</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+  <style>
+      #checkout{background: yellow}
+        #temp,#hum{z-index: 6167}
+        #pen{color: #777}
+        .top a:visited{color:purple}
+        .topnav li{display: inline-block;margin-right: 10px}
+        
+        #collapsibleNavbar{transition: all 0.6s ease}
+        #quato{font-size: 13px}
+        i.fa-minus-square{color: red;cursor: pointer}
+        i.fa-plus-square{color: green;cursor: pointer}
+        i.fa-heart{color: #999}
+        i.fa-share-alt,i.fa-camera-retro,i.fa-cube{margin-right: 4px}
+        span{float: right}
+        .btn{border: 1px solid #666}
+        .btn.login,.btn.view{background: #626262}
+        h5{background: yellow;padding: 5px;text-align: center}
+        .menu{}
+        .content{height: 400px;margin-bottom: 3px;}
+        [class=^"col"]{min-height:1px;}
+        .nav-item{margin-right: 6px}
+        .menuu,.main-content,.tot-main,.top1{box-shadow: 2px 2px 2px 2px #ddd}
+        
+        .main-content{overflow: auto;height: 400px;}
+        .menu{list-style: none}
+        .menu li a{color: green;font-weight: 500}
+        .top{background-color:yellow;margin-bottom: 5px}
+        .md{background: yellow}
+        @media screen and (min-width:600px){
+            .top1{position: fixed;top:170px;padding: 20px}
+            
+        
+        }
+        @media screen and (max-width:500px){
+            .nav-item{margin:5px 0}
+            [class=^"col"]{min-height:0px;}
+        }
+    </style>  
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-md bg-dark navbar-dark navbar-fixed-top">
+  <a class="navbar-brand" href="#"><i class="fa fa-cube"></i>smartQ<br><p id="quato">a pen by ASHISH</p></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav navbar-right">
+      <li class="nav-item">
+        <button class="btn btn-dark" type="submit"><i class="fa fa-heart"></i></button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-dark" type="submit"><i class="fa fa-share-alt"></i>Fork</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-dark view" type="submit"><i class="fa fa-camera-retro"></i>Change View</button>
+      </li> 
+      <li class="nav-item">
+        <button class="btn btn-success" type="submit">Sign Up</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-dark login" type="submit">Log In</button>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<div class="container-fluid top">
+    <div class="row">
+    
+    <div class="col-md-3 col-sm-6">
+      <ul class="topnav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Cart</a></li>
+      </ul>
+       
+        
+    </div>
+    <div class="col-md-6">
+        
+    </div>
+    <div class="col-md-2 col-sm-6">
+        <div class="dropdown">
+  <a href="">user@mail.com<span class="fa fa-caret-down"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#">gmail</a></li>
+    <li><a href="#">gmail</a></li>
+    <li><a href="#">gmail</a></li>
+  </ul>
+</div>
+    </div>
+    <div class="col-md-1 col-sm-1">
+        
+    </div>
+    
+    </div>
+</div>
+<div class="container-fluid top1">
+    <div class="row">
+        <div class="col-md-3 col-xs-12">
+           <div class="menuu">
+              <h5 class="text-center">Category</h5>
+               <ul class="menu">
+                <li><a href="#cc">Chinese Combos</a></li>
+                <li><a href="#cs">Chinese Starter</a></li>
+                <li><a href="#sd">Salads</a></li>
+                <li><a href="#ol">Oriental</a></li>
+            </ul>
+           </div>
+        
+        </div>
+         <div class="col-md-6 col-xs-12">
+            <div class="main-content">
+            <div class="content" id="cc">
+            <h5>Chinese Combos</h5>
+            <table class="table">
+    
+    <tbody>
+      <tr>
+        <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td class="">0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+      <tr>
+         <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+    </tbody>
+  </table>
+            </div>
+             <div class="content" id="cs">
+             <h5>Chinese Starter</h5>
+             <table class="table">
+    
+    <tbody>
+      <tr>
+        <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+      <tr>
+         <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+    </tbody>
+  </table>
+             </div>
+             <div class="content" id="sd">
+             <h5>Salads</h5>
+             <table class="table">
+    
+    <tbody>
+      <tr>
+        <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+      <tr>
+         <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+    </tbody>
+  </table>
+             </div>
+             <div class="content" id="ol">
+             <h5>Oriental</h5>
+             <table class="table">
+    
+    <tbody>
+      <tr>
+        <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+      <tr>
+         <td>name</td>
+        <td><i class="fa fa-minus-square"></i></td>
+        <td>0</td>
+        <td><i class="fa fa-plus-square"></i></td>
+        <td><i class="fa fa-rupee"></i></td>
+      </tr>
+    </tbody>
+  </table>
+             </div>
+            </div>
+             
+         </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="tot-main">
+                <h5 style="text-align: left">Your Cart<span class="fa fa-trash-alt"></span></h5>
+                <table class="table">
+    
+    <tbody>
+      <tr>
+        
+        <td>Total:</td>
+        <td><i class="fa fa-rupee"></i></td>
+        
+      </tr>
+      <tr>
+         <td><button id="checkout" class="btn-block" data-toggle="modal" data-target="#myModal">Checkout</button></td> 
+      </tr>
+    </tbody>
+  </table>
+              
+              
+            </div>
+             
+          </div>
+    </div>
+</div>
+<!--modal start-->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Checkout</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          total price:<b id="total-price"></b><i class="fa fa-rupee"></i>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!--modal ends-->
+
+ 
+   <script src="js/bootstrap.min.js"></script>
+      
+
+      
+    <!-- Script to get JSON file and display its content --> 
+    <script> 
+        fetch('https://thesmartq.firebaseio.com/menu.json')
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+    for(i in data){
+         document.querySelector("fa.fa-rupee").innerHTML=price
+    }
+    
+  })
+  .catch(err => {
+    
+  })
+      </script> 
+      <script>
+      $()    
+          
+    </script>
+</body>
+</html>
